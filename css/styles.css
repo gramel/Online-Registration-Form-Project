@@ -121,7 +121,7 @@ fieldset {
 /* Contact Information
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.input-label {
+.input-label, .input-label-textarea {
   display: block;
   padding: 10px 0;
   color: #2b3946; }
