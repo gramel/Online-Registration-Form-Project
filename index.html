@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Project 3 | Online Registration</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans" >
+    <link rel="stylesheet" href="css/styles.css" />
+
+  </head>
+  <body>
+    
+  <!-- start main-header -->
+  <header class="main-header clearfix">
+    <h3 class="name">The Code Review</h3>
+  </header><!-- end main-header -->
+
+  <div class="container clearfix"> 
+
+    <!-- start call to action -->
+    <div class="call-to-action clearfix">
+      <img src="img/mascot.jpg" alt="Picture of Mascot" class="profile-image">
+      <h3 class="cta-title">Signup for our newsletter</h3>
+      <p class="cta-description">Get the latest news on how your code is doing right in your inbox</p>
+    </div><!-- end call to action -->
+      
+    <!-- start form -->
+    <form action="index.html" method="post" class="contact-information clearfix">
+
+      <!-- start contact information -->
+      <fieldset>
+
+        <legend class="sub-header"><span class="number">1</span>Contact Information</legend>
+
+        <label for="name" class="input-label">Full Name</label>
+        <input type="text" id="name" name="user_name" pattern="[a-zA-Z]+[ ]+[a-zA-Z]+" placeholder="Required" required class="input-field">
+
+        <label for="email" class="input-label">Email Address</label>
+        <input type="email" id="email" name="user_email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,3}$" placeholder="Required" required class="input-field">
+
+        <label for="telephone" class="input-label">Phone Number</label>
+        <input type="tel" id="telephone" name="user_telephone" placeholder="Optional" class="input-field">
+
+        <label for="address" class="input-label">Street Address</label>
+        <input type="text" id="address" name="user_address" placeholder="Optional" class="input-field">
+
+        <label for="city" class="input-label">City</label>
+        <input type="text" id="city" name="user_city" placeholder="Optional" class="input-field">
+
+        <label for="state" class="input-label">State</label>
+        <select id="state" name="user_state" class="input-field">
+          <option value="" disabled selected>Choose State</option>
+          <option value="California">California</option>
+          <option value="Hawaii">Hawaii</option>
+          <option value="Illinois">Illinois</option>
+          <option value="North Carolina">North Carolina</option>
+          <option value="Ohio">Ohio</option>
+          <option value="Washington">Washington</option>
+        </select>
+
+        <label for="zip" class="input-label">Zip Code</label>
+        <input type="text" id="zip" name="user_zip" placeholder="Optional" class="input-field input-field-zip">
+      </fieldset><!-- end contact information -->
+
+      <!-- start newsletter -->
+      <fieldset>
+        <legend class="sub-header"><span class="number">2</span>Newsletter</legend>
+        <p class="newsletter-description">Select the newsletters you would like to receive</p>
+ 
+        <input type="checkbox" id="html" value="html_news" name="user_html" class="checkbox">
+        <label for="html" class="checkbox-label">HTML News</label><br>
+
+        <input type="checkbox" id="css" value="css_news" name="user_css">
+        <label for="css" class="checkbox-label">CSS News</label><br>
+
+        <input type="checkbox" id="javascript" value="javascript_news" name="user_javascript">
+        <label for="javascript" class="checkbox-label">Javascript News</label><br>
+
+        <p class="newsletter-description">Newsletter format</p>
+
+        <input type="radio" id="html-format" value="html_news" name="user_newsletter_format">
+        <label for="html-format" class="radio-label">HTML</label><br>
+
+        <input type="radio" id="plain-format" value="html_news" name="user_newsletter_format">
+        <label for="plain-format" class="radio-label">Plain Text</label><br>
+
+        <label for="framework" class="input-label"><span class="newsletter-description">Favorite Framework</span></label>
+        <select id="framework" name="user_framework" class="input-field">
+          <option value="" disabled selected>Choose Framework</option>
+          <option value="Bootstrap">Bootstrap</option>
+          <option value="Foundation">Foundation</option>
+          <option value="Semantic UI">Semantic UI</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="tshirt" class="input-label"><span class="newsletter-description">T-Shirt Size</span></label>
+        <select id="tshirt" name="user_tshirt" class="input-field">
+          <option value="" disabled selected>Choose T-Shirt Size</option>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+          <option value="Gigantor">Gigantor</option>
+        </select>
+
+        <p class="newsletter-description">Other topics you'd like to hear about</p>
+        <textarea id="other-topics" name="user_topics" placeholder="Optional"></textarea>
+      </fieldset><!-- end newsletter -->
+
+      <button type="submit">Sign Up</button>
+
+    </form><!-- end form -->
+
+    <!-- start main-footer -->
+    <footer class="main-footer clearfix">
+      <p class="footer-name">Copyright The Code Review</p>
+    </footer><!-- end main-footer -->
+  </div><!-- end container -->
+  </body>
+</html>
